@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="824.0" style="-fx-background-color: linear-gradient(to bottom,  #1D2D46, #5A4485);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projektsekai.Home">
+   <children>
+      <Label fx:id="usernamelabel" layoutX="5.0" layoutY="53.0" prefHeight="17.0" prefWidth="63.0" text="User" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="5.0" layoutY="34.0" prefHeight="17.0" prefWidth="73.0" text="Logged in as:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font></Label>
+      <ScrollPane fx:id="scrollpane" fitToWidth="true" layoutX="81.0" layoutY="37.0" prefHeight="650.0" prefWidth="705.0">
+         <content>
+            <VBox fx:id="scrollContent" prefHeight="646.0" prefWidth="702.0" spacing="10.0" style="-fx-background-color: linear-gradient(to bottom,  #47366D, #384589);" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="backButton" layoutX="16.0" layoutY="691.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="23.0" prefWidth="55.0" style="-fx-background-color: #080B38;" text="Return" textFill="WHITE" visible="false">
+         <opaqueInsets>
+            <Insets top="-2.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="prevButton" layoutX="282.0" layoutY="691.0" mnemonicParsing="false" onAction="#PrevPage" style="-fx-background-color: #080B38;" text="← Prev" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="nextButton" layoutX="481.0" layoutY="691.0" mnemonicParsing="false" onAction="#NextPage" style="-fx-background-color: #080B38;" text="Next →" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="pageField" layoutX="347.0" layoutY="691.0" onAction="#onPageEntered" prefHeight="25.0" prefWidth="63.0" visible="false" />
+      <Label fx:id="totalPagesLabel" alignment="CENTER" layoutX="426.0" layoutY="695.0" prefHeight="17.0" prefWidth="63.0" text="Label" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="of" layoutX="420.0" layoutY="695.0" text="of" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="bookmarkButton" layoutX="202.0" layoutY="691.0" mnemonicParsing="false" onAction="#onBookmarkClicked" style="-fx-background-color: #080B38;" text="Bookmark" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="viewBookmarksButton" layoutX="84.0" layoutY="691.0" mnemonicParsing="false" onAction="#onViewBookmarks" style="-fx-background-color: #080B38;" text="View Bookmarks" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="favoritesOnlyCheckBox" layoutX="33.0" layoutY="657.0" mnemonicParsing="false" onAction="#onFavoritesToggle" prefHeight="17.0" prefWidth="11.0" />
+      <Label fx:id="sf" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="614.0" prefHeight="35.0" prefWidth="63.0" text="Show Favorites" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="favoriteButton" layoutX="543.0" layoutY="691.0" mnemonicParsing="false" onAction="#onSetAsFavorite" style="-fx-background-color: #080B38;" text="★ Mark as Favorite" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="manageAccountButton" layoutX="115.0" layoutY="10.0" mnemonicParsing="false" onAction="#ManageAccount" prefHeight="17.0" prefWidth="98.0" style="-fx-background-color: #080B38;" text="Manage Account" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeFavoriteButton" layoutX="674.0" layoutY="691.0" mnemonicParsing="false" onAction="#onRemoveFromFavorite" style="-fx-background-color: #080B38;" text="Remove Favorite" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="5.0" layoutY="5.0" text="E-Sekai" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
