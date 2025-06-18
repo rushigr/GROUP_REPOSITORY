@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 
 /**
  * JavaFX App
+ * WILL RUN USING MAVEN COMMAND "mvn javafx:run" in VSCode terminal
  */
 public class App extends Application {
 
